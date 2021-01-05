@@ -1,11 +1,17 @@
+import React from 'react'
+import Sidebar from './Sidebar';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Whatsapp Web Clone</h1>
+    <div className="app">
+      <div class="app__body">
+        <Sidebar />                   
+      </div>
     </div>
   );
 }
 
 export default App;
+
