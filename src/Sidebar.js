@@ -4,21 +4,22 @@ import React, { useEffect, useState } from 'react'
 
 import db from './firebase'
 
-import Sidebarchat from './SidebarChat'
 import './Sidebar.css'
+import SidebarChat from './SidebarChat'
 function Sidebar() {
 
     const [rooms, setRooms] = useState([])
 
     useEffect(() => {
-        db.collection('rooms').onSnapshot(snapshot => (
-            setRooms(snapshot.rooms.map(doc => ({
+        db.collection("rooms").onSnapshot((snapshot) => 
+            setRooms(snapshot.docs.map((doc) => ({
                 id: doc.id,
                 data: doc.data(),
-                })
-            ))
-         ))
+                }))
+            )
+         )
     }, [])
+
     return (
         <div className="sidebar">
             <div className="sidebar__header">
@@ -45,9 +46,9 @@ function Sidebar() {
                 </div>           
             </div>
             <div className="sidebar__chats">
-                <Sidebarchat addNewChat/>
+                <SidebarChat addNewChat/>
                 {rooms.map(room => (
-                    <Sidebar key={room.id} id={room.id} name={room.data.name}/>
+                    <SidebarChat key={room.id} id={room.id} name={room.data.name}/>
                 ))}
 
 

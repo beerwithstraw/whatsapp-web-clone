@@ -1,5 +1,6 @@
 import { Avatar } from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
+import db from './firebase';
 
 import './SidebarChat.css'
 function SidebarChat({ addNewChat, id, name }) {
@@ -12,7 +13,11 @@ function SidebarChat({ addNewChat, id, name }) {
     const createChat = () => {
         const roomName = prompt("Please enter your Name")
 
-        if (roomName) {}
+        if (roomName) {
+            db.collection('rooms').add({
+                name: roomName,
+            })
+        }
     };
 
     return !addNewChat ? (
