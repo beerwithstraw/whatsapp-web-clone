@@ -47,7 +47,7 @@
 }
 
 .sidebar__searchContainer > input {
-    width: 100%;
+    width: 80%;
     border: none;
     outline: none;
 }
@@ -62,5 +62,5 @@
     border-top: 1px solid lightgray;
     margin-top: -25px;
     background-color: white;
-    overflow: scroll;
+    overflow-y: scroll;
 }
