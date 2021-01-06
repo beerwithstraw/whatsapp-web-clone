@@ -1,4 +1,36 @@
 .chat {
     flex: 0.7;
-    background-color: blue;
+    flex-direction: column;
+}
+
+.chat__header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 2.5px;
+    border-bottom: 1px solid lightgray;    
+}
+
+.chat__headerInfo {
+    flex: 1;
+    padding-left: 7px;
+}
+
+.chat__headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 0vw;
+    color: gray;
+}
+
+.chat__headerInfo > h3 {
+    font-size: 16px;
+    margin-bottom: -2px;
+}
+
+.chat__headerInfo > p {
+    font-size: 12px;
+    margin-top: 3px;
 }

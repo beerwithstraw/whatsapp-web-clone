@@ -7,10 +7,10 @@
 }
 
 .sidebar__header {
-    margin-top: -15px;
+    margin-bottom: 22px; 
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 10px;
 }
 
 .sidebar__headerRight {
