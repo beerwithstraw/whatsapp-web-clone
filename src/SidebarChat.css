@@ -6,9 +6,10 @@
     border-bottom: 1px solid lightgray;
 }
 
-.sidebarChat :hover {
+.sidebarChat:hover {
     background-color: #ededed;
 }
+
 .sidebarChat__info {
     margin-left: 10px;
 }
