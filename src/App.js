@@ -7,6 +7,7 @@ import './App.css';
 import Login from './Login';
 import { useStateValue } from './StateProvider';
 
+// Hosted on: https://whatsapp-web-clone-22749.web.app/
 
 function App() {
 
